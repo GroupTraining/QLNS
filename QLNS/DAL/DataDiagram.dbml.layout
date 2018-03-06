@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataDiagram">
+  <DataContextMoniker Name="/DataDiagramDataContext" />
+  <nestedChildShapes>
+    <classShape Id="08b4b5b3-c4fa-428c-9de7-46722f23b935" absoluteBounds="4.375, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataDiagramDataContext/DuAn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba84ebda-bac1-413d-900a-8dd00634c047" absoluteBounds="4.39, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f1c67c7-4303-4e24-9ef2-46e66c1957f5" absoluteBounds="4.75, 4.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataDiagramDataContext/NhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38da8bfc-5be7-46a2-bedd-e228a9eb0b3b" absoluteBounds="4.765, 4.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="20f6ad9f-4ef1-46fa-a835-fa75c5906b5e" absoluteBounds="7.5, 3.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DataDiagramDataContext/PhanCong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d43ec5d-ffd2-4638-86cd-fadd7de1a84c" absoluteBounds="7.515, 3.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb2f39c3-97c8-494b-9722-934f29056e46" absoluteBounds="2, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataDiagramDataContext/PhongBan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9033c6e7-1585-4742-9ccc-cf7388156b43" absoluteBounds="2.015, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d52a312e-c60b-44ab-aa32-6183a4386025" absoluteBounds="0.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DataDiagramDataContext/TaiKhoan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2dcfe9c-702e-4345-a1a9-bcbeaa4ac8c2" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.375 : 2.16429768880208); (8.5 : 2.16429768880208); (8.5 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataDiagramDataContext/DuAn/DuAn_PhanCong" />
+      <nodes>
+        <classShapeMoniker Id="08b4b5b3-c4fa-428c-9de7-46722f23b935" />
+        <classShapeMoniker Id="20f6ad9f-4ef1-46fa-a835-fa75c5906b5e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.75 : 4.31814697265625); (7.5 : 4.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataDiagramDataContext/NhanVien/NhanVien_PhanCong" />
+      <nodes>
+        <classShapeMoniker Id="9f1c67c7-4303-4e24-9ef2-46e66c1957f5" />
+        <classShapeMoniker Id="20f6ad9f-4ef1-46fa-a835-fa75c5906b5e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4 : 2.16429768880208); (4.375 : 2.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataDiagramDataContext/PhongBan/PhongBan_DuAn" />
+      <nodes>
+        <classShapeMoniker Id="bb2f39c3-97c8-494b-9722-934f29056e46" />
+        <classShapeMoniker Id="08b4b5b3-c4fa-428c-9de7-46722f23b935" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.40625 : 2.95359537760417); (3.40625 : 5.9319482421875); (4.75 : 5.9319482421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataDiagramDataContext/PhongBan/PhongBan_NhanVien" />
+      <nodes>
+        <classShapeMoniker Id="bb2f39c3-97c8-494b-9722-934f29056e46" />
+        <classShapeMoniker Id="9f1c67c7-4303-4e24-9ef2-46e66c1957f5" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
