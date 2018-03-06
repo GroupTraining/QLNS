@@ -34,10 +34,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2">
-      <HintPath>..\..\..\..\..\Desktop\DuAn1\BTLTTN\QuanLyNhanSu\QuanLyNhanSu\DevComponents.DotNetBar2.dll</HintPath>
+      <HintPath>..\..\..\..\..\DuAn1\BTLTTN\QuanLyNhanSu\QuanLyNhanSu\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
