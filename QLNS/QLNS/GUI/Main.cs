@@ -15,6 +15,27 @@ namespace QLNS.GUI
         public Main()
         {
             InitializeComponent();
+            contextMenuBar1.Visible = true;
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
         }
     }
 }

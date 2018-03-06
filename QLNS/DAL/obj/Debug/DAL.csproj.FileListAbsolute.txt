@@ -1,0 +1,6 @@
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\DAL\bin\Debug\DAL.dll.config
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\DAL\bin\Debug\DAL.dll
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\DAL\bin\Debug\DAL.pdb
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\DAL\obj\Debug\DAL.dll
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\DAL\obj\Debug\DAL.pdb
