@@ -14,3 +14,4 @@ C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\bin\Debug\BUS.pdb
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\bin\Debug\DAL.pdb
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.exe
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.pdb
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.GUI.Edit.resources
