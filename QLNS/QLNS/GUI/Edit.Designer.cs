@@ -31,22 +31,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtThongtin = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateNgaysinh = new System.Windows.Forms.DateTimePicker();
+            this.txtMada = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radioNu = new System.Windows.Forms.RadioButton();
+            this.radioNam = new System.Windows.Forms.RadioButton();
+            this.txtMapb = new System.Windows.Forms.TextBox();
+            this.txtHoten = new System.Windows.Forms.TextBox();
+            this.txtManv = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtManv = new System.Windows.Forms.TextBox();
-            this.txtHoten = new System.Windows.Forms.TextBox();
-            this.txtMapb = new System.Windows.Forms.TextBox();
-            this.radioNam = new System.Windows.Forms.RadioButton();
-            this.radioNu = new System.Windows.Forms.RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtMada = new System.Windows.Forms.TextBox();
-            this.dateNgaysinh = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -88,6 +88,113 @@
             this.panel1.Size = new System.Drawing.Size(259, 182);
             this.panel1.TabIndex = 2;
             // 
+            // dateNgaysinh
+            // 
+            this.dateNgaysinh.CustomFormat = "dd/MM/yyyy";
+            this.dateNgaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateNgaysinh.Location = new System.Drawing.Point(93, 90);
+            this.dateNgaysinh.Name = "dateNgaysinh";
+            this.dateNgaysinh.Size = new System.Drawing.Size(154, 20);
+            this.dateNgaysinh.TabIndex = 13;
+            // 
+            // txtMada
+            // 
+            this.txtMada.Location = new System.Drawing.Point(93, 140);
+            this.txtMada.Name = "txtMada";
+            this.txtMada.Size = new System.Drawing.Size(154, 20);
+            this.txtMada.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(3, 140);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 21);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Mã Dự Án";
+            // 
+            // radioNu
+            // 
+            this.radioNu.AutoSize = true;
+            this.radioNu.Location = new System.Drawing.Point(183, 64);
+            this.radioNu.Name = "radioNu";
+            this.radioNu.Size = new System.Drawing.Size(39, 17);
+            this.radioNu.TabIndex = 10;
+            this.radioNu.TabStop = true;
+            this.radioNu.Text = "Nữ";
+            this.radioNu.UseVisualStyleBackColor = true;
+            // 
+            // radioNam
+            // 
+            this.radioNam.AutoSize = true;
+            this.radioNam.Location = new System.Drawing.Point(105, 64);
+            this.radioNam.Name = "radioNam";
+            this.radioNam.Size = new System.Drawing.Size(47, 17);
+            this.radioNam.TabIndex = 9;
+            this.radioNam.TabStop = true;
+            this.radioNam.Text = "Nam";
+            this.radioNam.UseVisualStyleBackColor = true;
+            // 
+            // txtMapb
+            // 
+            this.txtMapb.Location = new System.Drawing.Point(93, 116);
+            this.txtMapb.Name = "txtMapb";
+            this.txtMapb.Size = new System.Drawing.Size(154, 20);
+            this.txtMapb.TabIndex = 8;
+            // 
+            // txtHoten
+            // 
+            this.txtHoten.Location = new System.Drawing.Point(93, 37);
+            this.txtHoten.Name = "txtHoten";
+            this.txtHoten.Size = new System.Drawing.Size(154, 20);
+            this.txtHoten.TabIndex = 7;
+            // 
+            // txtManv
+            // 
+            this.txtManv.Location = new System.Drawing.Point(93, 11);
+            this.txtManv.Name = "txtManv";
+            this.txtManv.Size = new System.Drawing.Size(154, 20);
+            this.txtManv.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(3, 40);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 21);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Tên Nhân Viên";
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(4, 66);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 21);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Giới tính";
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(3, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 21);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Ngày Sinh";
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(3, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 21);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Mã Phòng Ban";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(4, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Mã Nhân Viên";
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(97, 45);
@@ -115,111 +222,6 @@
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(4, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Mã Nhân Viên";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(3, 119);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 21);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Mã Phòng Ban";
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(3, 95);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 21);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Ngày Sinh";
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(4, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 21);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Giới tính";
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(3, 40);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 21);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Tên Nhân Viên";
-            // 
-            // txtManv
-            // 
-            this.txtManv.Location = new System.Drawing.Point(93, 11);
-            this.txtManv.Name = "txtManv";
-            this.txtManv.Size = new System.Drawing.Size(154, 20);
-            this.txtManv.TabIndex = 5;
-            // 
-            // txtHoten
-            // 
-            this.txtHoten.Location = new System.Drawing.Point(93, 37);
-            this.txtHoten.Name = "txtHoten";
-            this.txtHoten.Size = new System.Drawing.Size(154, 20);
-            this.txtHoten.TabIndex = 7;
-            // 
-            // txtMapb
-            // 
-            this.txtMapb.Location = new System.Drawing.Point(93, 116);
-            this.txtMapb.Name = "txtMapb";
-            this.txtMapb.Size = new System.Drawing.Size(154, 20);
-            this.txtMapb.TabIndex = 8;
-            // 
-            // radioNam
-            // 
-            this.radioNam.AutoSize = true;
-            this.radioNam.Location = new System.Drawing.Point(105, 64);
-            this.radioNam.Name = "radioNam";
-            this.radioNam.Size = new System.Drawing.Size(47, 17);
-            this.radioNam.TabIndex = 9;
-            this.radioNam.TabStop = true;
-            this.radioNam.Text = "Nam";
-            this.radioNam.UseVisualStyleBackColor = true;
-            // 
-            // radioNu
-            // 
-            this.radioNu.AutoSize = true;
-            this.radioNu.Location = new System.Drawing.Point(183, 64);
-            this.radioNu.Name = "radioNu";
-            this.radioNu.Size = new System.Drawing.Size(39, 17);
-            this.radioNu.TabIndex = 10;
-            this.radioNu.TabStop = true;
-            this.radioNu.Text = "Nữ";
-            this.radioNu.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.Location = new System.Drawing.Point(3, 140);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 21);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Mã Dự Án";
-            // 
-            // txtMada
-            // 
-            this.txtMada.Location = new System.Drawing.Point(93, 140);
-            this.txtMada.Name = "txtMada";
-            this.txtMada.Size = new System.Drawing.Size(154, 20);
-            this.txtMada.TabIndex = 12;
-            // 
-            // dateNgaysinh
-            // 
-            this.dateNgaysinh.Location = new System.Drawing.Point(93, 90);
-            this.dateNgaysinh.Name = "dateNgaysinh";
-            this.dateNgaysinh.Size = new System.Drawing.Size(154, 20);
-            this.dateNgaysinh.TabIndex = 13;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -227,6 +229,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(522, 263);
             this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // Edit
             // 
