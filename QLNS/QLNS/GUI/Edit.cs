@@ -16,5 +16,10 @@ namespace QLNS.GUI
         {
             InitializeComponent();
         }
+
+        private void Edit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
