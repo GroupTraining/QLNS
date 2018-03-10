@@ -14,32 +14,13 @@ namespace QLNS.GUI
 {
     public partial class Edit : Form
     {
+        Bus tk = new Bus();
         public Edit()
         {
             InitializeComponent();
-            DataDiagramDataContext dt = new DataDiagramDataContext();
-            dataGridView1.DataSource = from u in dt.NhanViens
-                                       from t in dt.PhongBans
-                                       from v in dt.PhanCongs
-                                       from z in dt.DuAns
-                                       where u.MaNV == v.MaNV
-                                       where v.MaDA == z.MaDA
-                                       where u.MaPB == t.MaPB
-                                       select new
-                                       {
-                                           MaNV = u.MaNV,
-                                           HoTen = u.HoTen,
-                                           NS = u.NS,
-                                           GT = u.GT,
-                                           MaPB = t.MaPB,
-                                           MaDA = v.MaDA
-                                       };
+            dataGridView1.DataSource = tk.getData1();
         }
         
-        private void Edit_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)//đẩy dữ liệu từ gridview sang panel
         {
@@ -60,6 +41,12 @@ namespace QLNS.GUI
                     radioNu.Checked = true;
                 }
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)//Xóa nhân viên
+        {
+            tk.Delete(txtManv.Text);
+            dataGridView1.DataSource = tk.getData1();
         }
     }
 }
