@@ -48,5 +48,9 @@ namespace QLNS.GUI
             tk.Delete(txtManv.Text);
             dataGridView1.DataSource = tk.getData1();
         }
+
+        private void Edit_Load(object sender, EventArgs e)
+        {  
+        }
     }
 }

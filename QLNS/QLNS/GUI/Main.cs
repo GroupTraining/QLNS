@@ -20,7 +20,8 @@ namespace QLNS.GUI
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-
+            GUI.Add ad = new GUI.Add();
+            ad.Show();
         }
 
         private void btn_search_Click(object sender, EventArgs e)
@@ -30,7 +31,8 @@ namespace QLNS.GUI
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-
+            GUI.Edit edit = new GUI.Edit();
+            edit.Show();
         }
 
         private void btn_home_Click(object sender, EventArgs e)
