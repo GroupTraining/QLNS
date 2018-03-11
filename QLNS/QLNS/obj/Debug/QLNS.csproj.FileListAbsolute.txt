@@ -16,3 +16,4 @@ C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.exe
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.pdb
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.GUI.Edit.resources
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.GUI.Add.resources
+E:\github\QLNV\QLNS\QLNS\QLNS\bin\Debug\QLNS.exe.config
