@@ -37,7 +37,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.txtNS = new System.Windows.Forms.TextBox();
             this.txtLuong = new System.Windows.Forms.TextBox();
             this.txtMaNGS = new System.Windows.Forms.TextBox();
             this.txtMaPB = new System.Windows.Forms.TextBox();
@@ -45,12 +44,13 @@
             this.rabtn_nam = new System.Windows.Forms.RadioButton();
             this.rabtn_nu = new System.Windows.Forms.RadioButton();
             this.btnThêm = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dtpBirtday = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -75,7 +75,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(376, 16);
+            this.label3.Location = new System.Drawing.Point(351, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(22, 13);
             this.label3.TabIndex = 2;
@@ -102,7 +102,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(363, 57);
+            this.label6.Location = new System.Drawing.Point(3, 93);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 13);
             this.label6.TabIndex = 5;
@@ -111,7 +111,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(531, 57);
+            this.label7.Location = new System.Drawing.Point(175, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 13);
             this.label7.TabIndex = 6;
@@ -131,13 +131,6 @@
             this.txtHoTen.Size = new System.Drawing.Size(100, 20);
             this.txtHoTen.TabIndex = 8;
             // 
-            // txtNS
-            // 
-            this.txtNS.Location = new System.Drawing.Point(404, 9);
-            this.txtNS.Name = "txtNS";
-            this.txtNS.Size = new System.Drawing.Size(100, 20);
-            this.txtNS.TabIndex = 9;
-            // 
             // txtLuong
             // 
             this.txtLuong.Location = new System.Drawing.Point(44, 50);
@@ -154,14 +147,14 @@
             // 
             // txtMaPB
             // 
-            this.txtMaPB.Location = new System.Drawing.Point(404, 50);
+            this.txtMaPB.Location = new System.Drawing.Point(44, 86);
             this.txtMaPB.Name = "txtMaPB";
             this.txtMaPB.Size = new System.Drawing.Size(100, 20);
             this.txtMaPB.TabIndex = 12;
             // 
             // txtDuAn
             // 
-            this.txtDuAn.Location = new System.Drawing.Point(573, 49);
+            this.txtDuAn.Location = new System.Drawing.Point(215, 86);
             this.txtDuAn.Name = "txtDuAn";
             this.txtDuAn.Size = new System.Drawing.Size(100, 20);
             this.txtDuAn.TabIndex = 13;
@@ -169,7 +162,7 @@
             // rabtn_nam
             // 
             this.rabtn_nam.AutoSize = true;
-            this.rabtn_nam.Location = new System.Drawing.Point(534, 13);
+            this.rabtn_nam.Location = new System.Drawing.Point(379, 51);
             this.rabtn_nam.Name = "rabtn_nam";
             this.rabtn_nam.Size = new System.Drawing.Size(47, 17);
             this.rabtn_nam.TabIndex = 14;
@@ -180,7 +173,7 @@
             // rabtn_nu
             // 
             this.rabtn_nu.AutoSize = true;
-            this.rabtn_nu.Location = new System.Drawing.Point(626, 16);
+            this.rabtn_nu.Location = new System.Drawing.Point(454, 50);
             this.rabtn_nu.Name = "rabtn_nu";
             this.rabtn_nu.Size = new System.Drawing.Size(39, 17);
             this.rabtn_nu.TabIndex = 15;
@@ -196,19 +189,21 @@
             this.btnThêm.TabIndex = 16;
             this.btnThêm.Text = "Thêm";
             this.btnThêm.UseVisualStyleBackColor = true;
+            this.btnThêm.Click += new System.EventHandler(this.btnThêm_Click);
             // 
-            // dataGridView1
+            // dgvNhanVien
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNV,
             this.HoTen,
             this.NS,
             this.GT});
-            this.dataGridView1.Location = new System.Drawing.Point(141, 196);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(440, 150);
-            this.dataGridView1.TabIndex = 17;
+            this.dgvNhanVien.Location = new System.Drawing.Point(141, 196);
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.Size = new System.Drawing.Size(440, 150);
+            this.dgvNhanVien.TabIndex = 17;
+            this.dgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MaNV
             // 
@@ -234,12 +229,20 @@
             this.GT.HeaderText = "GT";
             this.GT.Name = "GT";
             // 
+            // dtpBirtday
+            // 
+            this.dtpBirtday.Location = new System.Drawing.Point(379, 10);
+            this.dtpBirtday.Name = "dtpBirtday";
+            this.dtpBirtday.Size = new System.Drawing.Size(220, 20);
+            this.dtpBirtday.TabIndex = 18;
+            // 
             // Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 348);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtpBirtday);
+            this.Controls.Add(this.dgvNhanVien);
             this.Controls.Add(this.btnThêm);
             this.Controls.Add(this.rabtn_nu);
             this.Controls.Add(this.rabtn_nam);
@@ -247,7 +250,6 @@
             this.Controls.Add(this.txtMaPB);
             this.Controls.Add(this.txtMaNGS);
             this.Controls.Add(this.txtLuong);
-            this.Controls.Add(this.txtNS);
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.txtMaNV);
             this.Controls.Add(this.label7);
@@ -259,7 +261,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Add";
             this.Text = "Add";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Add_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,7 +279,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.TextBox txtNS;
         private System.Windows.Forms.TextBox txtLuong;
         private System.Windows.Forms.TextBox txtMaNGS;
         private System.Windows.Forms.TextBox txtMaPB;
@@ -284,10 +286,11 @@
         private System.Windows.Forms.RadioButton rabtn_nam;
         private System.Windows.Forms.RadioButton rabtn_nu;
         private System.Windows.Forms.Button btnThêm;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn NS;
         private System.Windows.Forms.DataGridViewTextBoxColumn GT;
+        private System.Windows.Forms.DateTimePicker dtpBirtday;
     }
 }
