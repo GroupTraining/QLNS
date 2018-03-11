@@ -25,7 +25,8 @@ namespace QLNS.GUI
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-
+            ThongKe thongke = new ThongKe();
+            thongke.Show();
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
