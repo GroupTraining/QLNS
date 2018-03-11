@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtGiatri = new System.Windows.Forms.TextBox();
+            this.btnCapnhat = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtGiatri = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtGt = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtDa = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtPb = new System.Windows.Forms.TextBox();
@@ -45,8 +47,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtManv = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtGt = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,8 +62,8 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -74,6 +75,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.btnCapnhat);
             this.splitContainer1.Panel1.Controls.Add(this.btnTimkiem);
             this.splitContainer1.Panel1.Controls.Add(this.txtGiatri);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
@@ -84,6 +86,42 @@
             this.splitContainer1.Size = new System.Drawing.Size(969, 372);
             this.splitContainer1.SplitterDistance = 69;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // btnCapnhat
+            // 
+            this.btnCapnhat.Location = new System.Drawing.Point(810, 25);
+            this.btnCapnhat.Name = "btnCapnhat";
+            this.btnCapnhat.Size = new System.Drawing.Size(75, 23);
+            this.btnCapnhat.TabIndex = 3;
+            this.btnCapnhat.Text = "Cập nhật";
+            this.btnCapnhat.UseVisualStyleBackColor = true;
+            this.btnCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
+            // 
+            // btnTimkiem
+            // 
+            this.btnTimkiem.Location = new System.Drawing.Point(670, 25);
+            this.btnTimkiem.Name = "btnTimkiem";
+            this.btnTimkiem.Size = new System.Drawing.Size(75, 23);
+            this.btnTimkiem.TabIndex = 2;
+            this.btnTimkiem.Text = "Tìm kiếm";
+            this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
+            // txtGiatri
+            // 
+            this.txtGiatri.Location = new System.Drawing.Point(362, 25);
+            this.txtGiatri.Name = "txtGiatri";
+            this.txtGiatri.Size = new System.Drawing.Size(257, 20);
+            this.txtGiatri.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(222, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nhập thông tin tìm kiếm";
             // 
             // splitContainer2
             // 
@@ -99,49 +137,8 @@
             // 
             this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer2.Size = new System.Drawing.Size(969, 299);
-            this.splitContainer2.SplitterDistance = 239;
+            this.splitContainer2.SplitterDistance = 238;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(222, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nhập thông tin tìm kiếm";
-            // 
-            // txtGiatri
-            // 
-            this.txtGiatri.Location = new System.Drawing.Point(362, 25);
-            this.txtGiatri.Name = "txtGiatri";
-            this.txtGiatri.Size = new System.Drawing.Size(257, 20);
-            this.txtGiatri.TabIndex = 1;
-            // 
-            // btnTimkiem
-            // 
-            this.btnTimkiem.Location = new System.Drawing.Point(670, 25);
-            this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(75, 23);
-            this.btnTimkiem.TabIndex = 2;
-            this.btnTimkiem.Text = "Tìm kiếm";
-            this.btnTimkiem.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaNV,
-            this.HoTen,
-            this.GT,
-            this.NS,
-            this.TenPB,
-            this.TenDA});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(726, 299);
-            this.dataGridView1.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -160,10 +157,26 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(239, 299);
+            this.groupBox1.Size = new System.Drawing.Size(238, 299);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
+            // 
+            // txtGt
+            // 
+            this.txtGt.Location = new System.Drawing.Point(95, 114);
+            this.txtGt.Name = "txtGt";
+            this.txtGt.Size = new System.Drawing.Size(135, 20);
+            this.txtGt.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 117);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Giới tính";
             // 
             // txtDa
             // 
@@ -245,21 +258,23 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Mã nhân viên";
             // 
-            // txtGt
+            // dataGridView1
             // 
-            this.txtGt.Location = new System.Drawing.Point(95, 114);
-            this.txtGt.Name = "txtGt";
-            this.txtGt.Size = new System.Drawing.Size(135, 20);
-            this.txtGt.TabIndex = 21;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 117);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Giới tính";
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaNV,
+            this.HoTen,
+            this.GT,
+            this.NS,
+            this.TenPB,
+            this.TenDA});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(727, 299);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // MaNV
             // 
@@ -316,9 +331,9 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,5 +365,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NS;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenPB;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDA;
+        private System.Windows.Forms.Button btnCapnhat;
     }
 }

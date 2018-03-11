@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
 
 namespace QLNS.GUI
 {
@@ -15,6 +16,21 @@ namespace QLNS.GUI
         public TimKiem()
         {
             InitializeComponent();
+        }
+
+        private void btnCapnhat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -5,3 +5,10 @@ C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\BUS\bin\Debug\DAL.pdb
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\BUS\obj\Debug\BUS.dll
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\BUS\obj\Debug\BUS.pdb
+E:\github\hongabc\QLNS\QLNS\BUS\bin\Debug\BUS.dll
+E:\github\hongabc\QLNS\QLNS\BUS\bin\Debug\BUS.pdb
+E:\github\hongabc\QLNS\QLNS\BUS\bin\Debug\DAL.dll
+E:\github\hongabc\QLNS\QLNS\BUS\bin\Debug\DAL.pdb
+E:\github\hongabc\QLNS\QLNS\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+E:\github\hongabc\QLNS\QLNS\BUS\obj\Debug\BUS.dll
+E:\github\hongabc\QLNS\QLNS\BUS\obj\Debug\BUS.pdb

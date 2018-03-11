@@ -22,7 +22,7 @@ namespace QLNS.GUI
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            if(bus.check_login(txt_username.Text, txt_password.Text) == 1)
+            if(bus.check_login(txt_username.Text, txt_password.Text) != 0)
             {
                 GUI.Main main = new GUI.Main();
                 main.Show();
