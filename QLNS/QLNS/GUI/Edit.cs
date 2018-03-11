@@ -52,5 +52,24 @@ namespace QLNS.GUI
         private void Edit_Load(object sender, EventArgs e)
         {  
         }
+
+        private void button2_Click(object sender, EventArgs e)//Cập nhật nhân viên
+        {
+            string gt = "";
+            if (radioNam.Checked == true){
+                gt = "Nam";
+            }else
+            {
+                gt = "Nữ";
+            }
+            
+            tk.Edit(txtManv.Text, txtHoten.Text,  dateNgaysinh.Text,gt, txtMapb.Text);
+            dataGridView1.DataSource = tk.getData1();
+        }
+
+        private void button1_Click(object sender, EventArgs e)//Tìm kiếm
+        {
+             dataGridView1.DataSource = tk.Search(txtThongtin.Text);
+        }
     }
 }
