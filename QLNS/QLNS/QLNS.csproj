@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,7 +113,7 @@
       <Name>BUS</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{1e727685-c666-41cc-8900-78d716e7214d}</Project>
+      <Project>{a6552042-5ba9-4a0e-bc3b-cf7a582f7e30}</Project>
       <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>

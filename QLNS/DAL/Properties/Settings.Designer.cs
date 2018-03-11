@@ -26,7 +26,8 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DELL-PC\\THANGMMT;Initial Catalog=adminPC;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-8T21MBV\\SQLEXPRESS;Initial Catalog=adminPC;Integrated Securit" +
+            "y=True")]
         public string adminPCConnectionString {
             get {
                 return ((string)(this["adminPCConnectionString"]));
