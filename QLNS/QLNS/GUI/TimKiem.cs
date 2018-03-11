@@ -46,6 +46,7 @@ namespace QLNS.GUI
 
         private void btnTimkiem_Click_1(object sender, EventArgs e)
         {
+            //Hien thi du lieu vien
             dataGridView1.DataSource = bus.get_nhanvien(txtGiatri.Text);
         }
     }
