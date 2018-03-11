@@ -16,3 +16,8 @@ C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.exe
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.pdb
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.GUI.Edit.resources
 C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.GUI.Add.resources
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.GUI.ThongKe.resources
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.GUI.TimKiem.resources
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.UC.DuAn.resources
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.UC.NhanVien.resources
+C:\Users\DELL\Desktop\DuAn01\QLNS\QLNS\QLNS\QLNS\obj\Debug\QLNS.UC.PhongBan.resources

@@ -33,7 +33,7 @@
             this.btn_add = new DevComponents.DotNetBar.ButtonItem();
             this.btn_search = new DevComponents.DotNetBar.ButtonItem();
             this.btn_edit = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
+            this.btn_TK = new DevComponents.DotNetBar.ButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.contextMenuBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             this.btn_add,
             this.btn_search,
             this.btn_edit,
-            this.buttonItem1});
+            this.btn_TK});
             this.contextMenuBar1.Location = new System.Drawing.Point(0, 0);
             this.contextMenuBar1.Name = "contextMenuBar1";
             this.contextMenuBar1.Size = new System.Drawing.Size(832, 29);
@@ -92,13 +92,14 @@
             this.btn_edit.Text = " Chỉnh sửa ";
             this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
-            // buttonItem1
+            // btn_TK
             // 
-            this.buttonItem1.AutoExpandOnClick = true;
-            this.buttonItem1.ForeColor = System.Drawing.Color.Blue;
-            this.buttonItem1.ImagePaddingHorizontal = 8;
-            this.buttonItem1.Name = "buttonItem1";
-            this.buttonItem1.Text = " Help";
+            this.btn_TK.AutoExpandOnClick = true;
+            this.btn_TK.ForeColor = System.Drawing.Color.Blue;
+            this.btn_TK.ImagePaddingHorizontal = 8;
+            this.btn_TK.Name = "btn_TK";
+            this.btn_TK.Text = " Thống kê";
+            this.btn_TK.Click += new System.EventHandler(this.btn_TK_Click);
             // 
             // Main
             // 
@@ -118,7 +119,7 @@
         private DevComponents.DotNetBar.ButtonItem btn_add;
         private DevComponents.DotNetBar.ButtonItem btn_search;
         private DevComponents.DotNetBar.ButtonItem btn_edit;
-        private DevComponents.DotNetBar.ButtonItem buttonItem1;
+        private DevComponents.DotNetBar.ButtonItem btn_TK;
         private DevComponents.DotNetBar.ContextMenuBar contextMenuBar1;
     }
 }
