@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
-
 namespace BUS
 {
     public class Bus
@@ -43,6 +42,17 @@ namespace BUS
                                MaDA = v.MaDA
                            };
 
+            return database;
+        }
+
+        public object getDataPhongBan()
+        {
+            var database = from p in data.PhongBans
+                           select new
+                           {
+                               MaPB = p.MaPB,
+                               TenPB = p.TenPB
+                           };
             return database;
         }
         public object Delete(string ma)
