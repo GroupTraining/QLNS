@@ -43,22 +43,13 @@ namespace QLNS.GUI
             
         }
 
-        private void button3_Click(object sender, EventArgs e)//Xóa nhân viên
-        {
-            tk.Delete(txtManv.Text);
-            dataGridView1.DataSource = tk.getData1();
-        }
+        
 
         private void Edit_Load(object sender, EventArgs e)
         {  
         }
-
-        private void button1_Click(object sender, EventArgs e)//Tìm kiếm
-        {
-            dataGridView1.DataSource = tk.Search(txtThongtin.Text);
-        }
-
-        private void button2_Click(object sender, EventArgs e)//Cập nhật nhân viên
+        
+        private void button2_Click_1(object sender, EventArgs e)//Cập nhật nhân viên
         {
             string gt = "";
             if (radioNam.Checked == true)
@@ -73,6 +64,17 @@ namespace QLNS.GUI
             tk.Edit(txtManv.Text, txtHoten.Text, dateNgaysinh.Text, gt, txtMapb.Text);
             dataGridView1.DataSource = tk.getData1();
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)//Tìm kiếm
+        {
+            dataGridView1.DataSource = tk.Search(txtThongtin.Text);
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)//Xóa nhân viên
+        {
+            tk.Delete(txtManv.Text);
+            dataGridView1.DataSource = tk.getData1();
         }
     }
 }
